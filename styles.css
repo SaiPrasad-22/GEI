@@ -191,6 +191,10 @@ nav {
   display: none;
 }
 
+.gei_logo {
+  width: 125px;
+}
+
 .header__container {
   display: grid;
   gap: 2rem 0;
