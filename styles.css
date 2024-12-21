@@ -312,7 +312,7 @@ nav {
   align-items: flex-start;
   gap: 1rem;
   margin-left: 30px;
-  text-align: right;
+  text-align: left;
   list-style-type: disc;
 }
 
@@ -407,6 +407,10 @@ nav {
 
 .download__image {
   display: none;
+}
+
+.download__image img {
+  border-radius: 15px;
 }
 
 .download__content .section__header {
@@ -604,6 +608,7 @@ nav {
   .service__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    text-align: left;
   }
 
   .experience__content img {
