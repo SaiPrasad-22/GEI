@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravton Energy Innovations Preloader</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a; /* Dark background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fe5b3e; /* Orange color for the circles */
+  position: absolute;
+  animation: infinityLoop 1.5s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+  left: 0;
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  left: 50px; /* Horizontal distance between the circles */
+  animation-delay: 0.75s; /* Stagger the second circle's animation */
+}
+
+@keyframes infinityLoop {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    top: 100%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+</body>
+</html>

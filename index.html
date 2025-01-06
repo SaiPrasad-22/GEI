@@ -1,262 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>GEI</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#"
-              ><img class="gei_logo" src="assets/GEI Logo.png" alt=""
-            /></a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="assets/Favicon.png" type="image/x-icon">
+  <title>GEI</title>
+</head>
+
+<body>
+
+  <!-- Pre-Loader -->
+
+  <!-- <div class="preloader-wrapper" id="preloader">
+    <div class="preloader">
+      <span class="circle-one"></span>
+      <span class="circle-two"></span>
+      <span class="circle-three"></span>
+      <span class="circle-four"></span>
+    </div>
+  </div> -->
+
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img class="gei_logo" src="assets/GEI Logo.png" alt="" /></a>
         </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="nav__links__btn">
-            <button class="btn">Sign Up</button>
-          </li>
-          <li class="nav__links__btn">
-            <button class="btn">Sign In</button>
-          </li>
-        </ul>
-        <div class="nav__btns">
-          <button class="btn btn__primary">Sign Up</button>
-          <button class="btn btn__secondary">Sign In</button>
-        </div>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <div class="header__image">
-          <img src="assets/header.webp" alt="header" />
-        </div>
-        <div class="header__content">
-          <h1>Full-stack Indigenous Powertrain Solutions</h1>
-          <p>
-            Indigenous, scalable, and Efficient Powertrain Solutions for
-            Electric Vehicles and Beyond
-          </p>
-          <button class="btn1">View More</button>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
         </div>
       </div>
-    </header>
-
-    <section class="section__container steps__container">
-      <h2 class="section__header">A Full Stack Solution</h2>
-      <p class="section__subheader">
-        An indigenous drive train solution for e-mobility, which is efficient,
-        flexible, modular, and scalable.
-      </p>
-      <img src="assets/GEI Platform_edited.avif" alt="" />
-    </section>
-
-    <section class="section__container steps__container">
-      <h2 class="section__header">Innovation at the Core</h2>
-      <p class="section__subheader">
-        We provide drive train solutions for motors ranging from 1KW to 15KW. A
-        vehicle control unit or drive train system for agile performance/driving
-        experience of vehicles, which encompasses cross-functional coordination
-        with all driving elements of two-wheeler such as BMS, Motor, thermal
-        management, torque control, charging management, Speed Control, Range
-        Control, and Dashboard (Smart Predictive strategy). And these all comes
-        along with cloud-based solution with mobile app integration.
-      </p>
-      <!-- Product 1 -->
-      <div class="service__container">
-        <div class="service__image">
-          <img src="assets/Motor.png" alt="service" />
-        </div>
-        <div class="service__content">
-          <h2 class="section__header">BLDC Hub Motor</h2>
-          <ul class="service__list">
-            <li>
-              A scalable Hub Motor which can apply from Scooters to Mopeds
-            </li>
-            <li>Max rated power up to 13KW</li>
-            <li>Best-in-class torque of 172 Nm - 220 Nm</li>
-            <li>Enables speeds up to12 Km/hr</li>
-            <li>Can be configured to 48V, 60V, and 72V</li>
-          </ul>
-          <button class="btn2">View More</button>
-        </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav__links__btn">
+          <button class="btn">Sign Up</button>
+        </li>
+        <li class="nav__links__btn">
+          <button class="btn">Sign In</button>
+        </li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn btn__primary">Sign Up</button>
+        <button class="btn btn__secondary">Sign In</button>
       </div>
-
-      <!-- Product 2 -->
-      <div class="service__container">
-        <div class="service__image">
-          <img src="assets/battery.png" alt="service" />
-        </div>
-        <div class="service__content">
-          <h2 class="section__header">Modular Battery</h2>
-          <ul class="service__list">
-            <li>
-              Safest LMFP Battery Chemistry! Resistant to Weather, Water, and
-              Fire.
-            </li>
-            <li>AIS 156 Phase II Certified</li>
-            <li>2C Discharge Capable</li>
-            <li>Smart BMS with Active Cell Balancing</li>
-            <li>Can be configurable to 48V, 60V, and 72V</li>
-            <li>Auto cutoff with audio buzzer</li>
-            <li>CAN Enabled</li>
-          </ul>
-          <button class="btn2">View More</button>
-        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.webp" alt="header" />
       </div>
-
-      <!-- Product 3 -->
-      <div class="service__container">
-        <div class="service__image">
-          <img src="assets/controller.png" alt="service" />
-        </div>
-        <div class="service__content">
-          <h2 class="section__header">Controller</h2>
-          <ul class="service__list">
-            <li>
-              CAN bus/RS485 controller area network communication function.
-            </li>
-            <li>
-              GOTAC transmitting real-time vehicle status to mobile app via
-              cloud.
-            </li>
-            <li>OBD (On-board diagnostics) communication function.</li>
-            <li>Voice command unlock enabled using GPS module.</li>
-            <li>GPS module transmitting all vehicle data to cloud.</li>
-          </ul>
-          <button class="btn2">View More</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__container experience__container">
-      <p class="section__subheader">CUSTOMER EXPERIENCE</p>
-      <h2 class="section__header">
-        We are ensuring the best customer experience
-      </h2>
-      <div class="experience__content">
-        <div class="experience__card">
-          <span><i class="ri-price-tag-3-fill"></i></span>
-          <h4>Competitive pricing</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-money-rupee-circle-fill"></i></span>
-          <h4>Budget Pricing</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-bank-card-fill"></i></span>
-          <h4>Most Felxible Payment Plans</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-award-fill"></i></span>
-          <h4>The Best Extended Auto Warranties</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-customer-service-2-fill"></i></span>
-          <h4>Roadside Assistance 24/7</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-car-fill"></i></span>
-          <h4>Your Choice Of Mechanic</h4>
-        </div>
-        <img src="assets/experience.png" alt="experience" />
-      </div>
-    </section>
-
-    <section class="section__container download__container">
-      <div class="download__grid">
-        <div class="download__content">
-          <h2 class="section__header">Download the free GEI app</h2>
-          <p>
-            Download the Gravton Energy Innovations app to manage your bookings,
-            find exclusive deals, and access 24/7 support, all from your mobile
-            device.
-          </p>
-          <button class="btn2">Download the App</button>
-        </div>
-        <div class="download__image">
-          <img src="assets/Gravton App.jpg" alt="download" />
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h4>Main Menu</h4>
-          <ul class="footer__links">
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Abous us</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Quick Links</h4>
-          <ul class="footer__links">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Coditions</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Contact Info</h4>
-          <ul class="footer__links">
-            <li>Industrial area, Cherlapally, Hyderabad.</li>
-            <li><a href="#">connect@gravtonmotors.com</a></li>
-            <li><a href="#">b2b@gravtonmotors.com</a></li>
-            <li><a href="#">7995252220</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col">
-          <h4>Follow Us</h4>
-          <ul class="footer__links">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-google-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="section__container footer__bar">
-        <h4>GEI</h4>
+      <div class="header__content">
+        <h1>Full-stack Indigenous Powertrain Solutions</h1>
         <p>
-          Copyright © Gravton Energy Innovations Pvt.Ltd. All rights reserved.
+          Indigenous, scalable, and Efficient Powertrain Solutions for
+          Electric Vehicles and Beyond
         </p>
+        <button class="btn1">View More</button>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Body Section -->
+  <section class="section__container steps__container">
+    <h2 class="section__header">A Full Stack Solution</h2>
+    <p class="section__subheader">
+      An indigenous drive train solution for e-mobility, which is efficient,
+      flexible, modular, and scalable.
+    </p>
+    <img src="assets/GEI Platform_edited.avif" alt="" />
+  </section>
+
+  <section class="section__container steps__container">
+    <h2 class="section__header">Innovation at the Core</h2>
+    <p class="section__subheader">
+      We provide drive train solutions for motors ranging from 1KW to 15KW. A
+      vehicle control unit or drive train system for agile performance/driving
+      experience of vehicles, which encompasses cross-functional coordination
+      with all driving elements of two-wheeler such as BMS, Motor, thermal
+      management, torque control, charging management, Speed Control, Range
+      Control, and Dashboard (Smart Predictive strategy). And these all comes
+      along with cloud-based solution with mobile app integration.
+    </p>
+    <!-- Product 1 -->
+    <div class="service__container">
+      <div class="service__image">
+        <img src="assets/Motor.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <h2 class="section__header">BLDC Hub Motor</h2>
+        <ul class="service__list">
+          <li>
+            A scalable Hub Motor which can apply from Scooters to Mopeds
+          </li>
+          <li>Max rated power up to 13KW</li>
+          <li>Best-in-class torque of 172 Nm - 220 Nm</li>
+          <li>Enables speeds up to12 Km/hr</li>
+          <li>Can be configured to 48V, 60V, and 72V</li>
+        </ul>
+        <button class="btn2">View More</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="service__container">
+      <div class="service__image">
+        <img src="assets/battery.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <h2 class="section__header">Modular Battery</h2>
+        <ul class="service__list">
+          <li>
+            Safest LMFP Battery Chemistry! Resistant to Weather, Water, and
+            Fire.
+          </li>
+          <li>AIS 156 Phase II Certified</li>
+          <li>2C Discharge Capable</li>
+          <li>Smart BMS with Active Cell Balancing</li>
+          <li>Can be configurable to 48V, 60V, and 72V</li>
+          <li>Auto cutoff with audio buzzer</li>
+          <li>CAN Enabled</li>
+        </ul>
+        <button class="btn2">View More</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="service__container">
+      <div class="service__image">
+        <img src="assets/controller.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <h2 class="section__header">Controller</h2>
+        <ul class="service__list">
+          <li>
+            CAN bus/RS485 controller area network communication function.
+          </li>
+          <li>
+            GOTAC transmitting real-time vehicle status to mobile app via
+            cloud.
+          </li>
+          <li>OBD (On-board diagnostics) communication function.</li>
+          <li>Voice command unlock enabled using GPS module.</li>
+          <li>GPS module transmitting all vehicle data to cloud.</li>
+        </ul>
+        <button class="btn2">View More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container experience__container">
+    <p class="section__subheader">CUSTOMER EXPERIENCE</p>
+    <h2 class="section__header">
+      We are ensuring the best customer experience
+    </h2>
+    <div class="experience__content">
+      <div class="experience__card">
+        <span><i class="ri-price-tag-3-fill"></i></span>
+        <h4>Competitive pricing</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-money-rupee-circle-fill"></i></span>
+        <h4>Budget Pricing</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-bank-card-fill"></i></span>
+        <h4>Most Felxible Payment Plans</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-award-fill"></i></span>
+        <h4>The Best Extended Auto Warranties</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-customer-service-2-fill"></i></span>
+        <h4>Roadside Assistance 24/7</h4>
+      </div>
+      <div class="experience__card">
+        <span><i class="ri-car-fill"></i></span>
+        <h4>Your Choice Of Mechanic</h4>
+      </div>
+      <img src="assets/experience.png" alt="experience" />
+    </div>
+  </section>
+  <!-- Download Section -->
+  <section class="section__container download__container">
+    <div class="download__grid">
+      <div class="download__content">
+        <h2 class="section__header">Download the free GEI app</h2>
+        <p>
+          Download the Gravton Energy Innovations app to manage your bookings,
+          find exclusive deals, and access 24/7 support, all from your mobile
+          device.
+        </p>
+        <button class="btn2">Download the App</button>
+      </div>
+      <div class="download__image">
+        <img src="assets/Gravton App.jpg" alt="download" />
+      </div>
+    </div>
+  </section>
+  <!-- Body Section End -->
+
+  <!-- Scroll To Top Section -->
+  <div id="scroll-to-top">
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+  </div>
+  <!-- Scroll To Top Section End -->
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer__container">
+      <!-- GEI Logo and Social Icons -->
+      <div class="footer__col logo-social">
+        <img src="assets/GEI Logo.png" alt="GEI Logo" class="footer__logo" />
         <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-google-fill"></i></a>
-          </li>
+          <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+          <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+          <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
         </ul>
       </div>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+      <div class="footer__col">
+        <h4>Main Menu</h4>
+        <ul class="footer__links">
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact Info</h4>
+        <ul class="footer__links">
+          <li>Industrial area, Cherlapally, Hyderabad.</li>
+          <li><a href="#">connect@gravtonmotors.com</a></li>
+          <li><a href="#">b2b@gravtonmotors.com</a></li>
+          <li><a href="#">7995252220</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <p>Copyright © Gravton Energy Innovations Pvt.Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

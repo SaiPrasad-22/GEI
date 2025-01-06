@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/Favicon.png" type="image/x-icon">
+    <title>GEI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav style="z-index: 1000;">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html"><img class="gei_logo" src="assets/GEI Logo.png" alt="" /></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav__links__btn">
+                    <button class="btn">Sign Up</button>
+                </li>
+                <li class="nav__links__btn">
+                    <button class="btn">Sign In</button>
+                </li>
+            </ul>
+            <div class="nav__btns">
+                <button class="btn btn__primary">Sign Up</button>
+                <button class="btn btn__secondary">Sign In</button>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Body Section -->
+        <div class="section__container">
+            <div class="header__content" style="margin-bottom: -25px">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+        <!-- Body Section Ends -->
+    </header>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="big-circle"></div>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's Get In Touch</h3>
+                <div class="info">
+                    <div class="information">
+                        <i class="fa-solid fa-map-location-dot icon"></i>
+                        <p>Industrial area, Cherlapally, Hyderabad.</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <p>connect@gravtonmotors.com</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-phone-volume icon"></i>
+                        <p>7995252220</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <h2 class="title">Download the Free GEI App</h2>
+                    <p>
+                        Download the Gravton Energy Innovations app to manage your bookings,
+                        find exclusive deals, and access 24/7 support, all from your mobile
+                        device.
+                    </p>
+                    <button class="btn2">Download the App</button>
+
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+
+                <form action="#" autocomplete="off">
+                    <h3 class="title">Contact Us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Name</label>
+                        <span>Name</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Submit" id="send_btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 87%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            z-index: 999;
+        }
+
+        .contact-form {
+            background-color: #1a70bc;
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            background: linear-gradient(135deg, transparent 20%, #146a92);
+            border-radius: 50%;
+        }
+
+        .circle.one {
+            width: 130px;
+            height: 130px;
+            top: 130px;
+            right: -20px;
+        }
+
+        .circle.two {
+            width: 80px;
+            height: 80px;
+            top: 10px;
+            right: 30px;
+        }
+
+        .contact-form::before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-color: #1a70bc;
+            top: 50px;
+            left: -12px;
+            transform: rotate(45deg);
+        }
+
+        form {
+            padding: 2.3rem 2.2rem;
+            position: relative;
+        }
+
+        .title {
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .input-container {
+            position: relative;
+            margin: 1rem 0;
+        }
+
+        .input {
+            width: 100%;
+            outline: none;
+            border: 2px solid #fafafa;
+            background: none;
+            padding: 0.6rem 1.2rem;
+            color: #fff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        textarea.input {
+            padding: 0.8rem 1.2rem;
+            min-height: 150px;
+            border-radius: 22px;
+            resize: none;
+            overflow-y: auto;
+        }
+
+        .input-container label {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            padding: 0 0.4rem;
+            font-weight: 400;
+            pointer-events: none;
+            transition: 0.3s;
+            color: #fafafa;
+            z-index: 999;
+        }
+
+        .input-container.textarea label {
+            top: 1rem;
+            transform: translateY(0);
+        }
+
+        .contact-info {
+            padding: 2.3rem 2.2rem;
+            position: relative;
+        }
+
+        .contact-info .title {
+            color: #1a70bc;
+        }
+
+        .text {
+            color: #333;
+            margin: 1.5rem 0 2rem 0;
+        }
+
+        .information {
+            display: flex;
+            color: #555;
+            margin: 0.7rem 0;
+            font-size: 0.95rem;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 30px;
+            color: var(--primary-color);
+            margin-right: 0.7rem;
+        }
+
+        .social-media {
+            padding: 2rem 0 0 0;
+        }
+
+        .social-media p {
+            color: #333;
+        }
+
+        .social-icons {
+            display: flex;
+            margin-top: 0.5rem;
+        }
+
+
+        .social-icons a:hover {
+            transform: scale(1.09);
+        }
+
+        .contact-info::before {
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            border: 22px solid #1a70bc;
+            border-radius: 50%;
+            bottom: -77px;
+            right: 50px;
+            opacity: 0.3;
+        }
+
+        #send_btn {
+            padding: 0.75rem 1.5rem;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            color: #1a70bc;
+            background-color: white;
+            white-space: nowrap;
+            border-radius: 15px;
+            transition: 0.3s;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #send_btn:hover {
+            background-color: #1a70bc;
+            color: white;
+            border: 2px solid white;
+            transform: translateY(-2px);
+        }
+
+
+
+        .input-container span {
+            position: absolute;
+            top: 0;
+            left: 25px;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            padding: 0 0.4rem;
+            color: transparent;
+            pointer-events: none;
+            z-index: 500;
+        }
+
+        .input-container span::before,
+        .input-container span::after {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 5px;
+            background-color: #1a70bc;
+            opacity: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .input-container span::before {
+            left: 50%;
+        }
+
+        .input-container span::after {
+            right: 50%;
+        }
+
+        .input-container.focus label {
+            top: 0;
+            transform: translateY(-50%);
+            left: 25px;
+            font-size: 0.8rem;
+        }
+
+        .input-container.focus span::before,
+        .input-container.focus span::after {
+            width: 50%;
+            opacity: 1;
+        }
+
+        @media (max-width: 850px) {
+            .form {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info::before {
+                bottom: initial;
+                top: -72px;
+                right: 65px;
+                transform: scale(0.95);
+            }
+
+            .contact-form::before {
+                top: -12px;
+                left: initial;
+                right: 70px;
+            }
+
+            .big-circle {
+                bottom: 75%;
+                transform: scale(0.9) translate(-40%, 30%);
+                right: 50%;
+            }
+
+            .text {
+                margin: 1rem 0 1.5rem 0;
+            }
+
+            .social-media {
+                padding: 1.5rem 0 0 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .contact-info::before {
+                display: none;
+            }
+
+            .big-circle {
+                display: none;
+            }
+
+            form,
+            .contact-info {
+                padding: 1.7rem 1.6rem;
+            }
+
+            .text,
+            .information,
+            .social-media p {
+                font-size: 0.8rem;
+            }
+
+            .title {
+                font-size: 1.15rem;
+            }
+
+            .social-icons a {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .icon {
+                font-size: 25px;
+            }
+
+            .input {
+                padding: 0.45rem 1.2rem;
+            }
+
+            #send_btn {
+                padding: 0.4rem 1rem;
+            }
+
+        }
+    </style>
+
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+        function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+
+            input.addEventListener("blur", blurFunc);
+        })
+    </script>
+
+    <!-- Scroll To Top Section -->
+    <div id="scroll-to-top">
+        <div id="progress">
+            <span id="progress-value">&#x1F815;</span>
+        </div>
+    </div>
+    <!-- Scroll To Top Section End -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer__container">
+            <!-- GEI Logo and Social Icons -->
+            <div class="footer__col logo-social">
+                <img src="assets/GEI Logo.png" alt="GEI Logo" class="footer__logo" />
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Main Menu</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Contact Info</h4>
+                <ul class="footer__links">
+                    <li>Industrial area, Cherlapally, Hyderabad.</li>
+                    <li><a href="#">connect@gravtonmotors.com</a></li>
+                    <li><a href="#">b2b@gravtonmotors.com</a></li>
+                    <li><a href="#">7995252220</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bar">
+            <p>Copyright © Gravton Energy Innovations Pvt.Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/Favicon.png" type="image/x-icon">
+    <title>GEI</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html"><img class="gei_logo" src="assets/GEI Logo.png" alt="" /></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav__links__btn">
+                    <button class="btn">Sign Up</button>
+                </li>
+                <li class="nav__links__btn">
+                    <button class="btn">Sign In</button>
+                </li>
+            </ul>
+            <div class="nav__btns">
+                <button class="btn btn__primary">Sign Up</button>
+                <button class="btn btn__secondary">Sign In</button>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Body Section -->
+        <div class="section__container">
+            <div class="header__content">
+                <h1>About Us</h1>
+                <p>
+                    Gravton Energy Innovations (GEI) is into developing cutting-edge, indigenous powertrain solutions
+                    for electric vehicles (EVs) and unmanned systems. <br> With a focus on sustainability, scalability,
+                    and
+                    innovation, we are committed to reshaping the future of mobility.
+                </p>
+            </div>
+            <!-- About Page Content -->
+            <div class="about-content">
+                <!-- Banner Slider Section -->
+                <div class="about-slider-container">
+                    <div id="about-slide">
+                        <div class="about-item" style="background-image: url(assets/Chopper.jpg);"></div>
+                        <div class="about-item" style="background-image: url(assets/Drone.jpg);"></div>
+                        <div class="about-item" style="background-image: url(assets/About\ Banner.jpg);"></div>
+                        <div class="about-item" style="background-image: url(assets/Car.jpg);"></div>
+                    </div>
+
+                    <!-- Slider Navigation Buttons -->
+                    <div class="about-buttons">
+                        <button id="about-prev">
+                            <i class="ri-arrow-left-line"></i>
+                        </button>
+                        <button id="about-next">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="header__content">
+                <h1>R&D</h1>
+                <p style="text-align: justify;">
+                    In line with the Government of India’s Atmanirbhar Bharat, GEI has embarked on its R&D journey to
+                    develop EV Powertrains that are on par with global standards. The company established a full-fledged
+                    R&D facility to achieve this objective at Hyderabad. <br>
+
+                    The high impact R&D efforts paid off in developing GEI’s very own BLDC hub motor for electric two
+                    wheelers. The first BLDC motor ever developed by GEI was used in the Quanta – the flagship EV
+                    motorcycle from Gravton’s stable. <br>
+
+                    This motor has already proved its worth by successfully finishing the highly risky and gruelling
+                    Kanyakumari to Khardung La (K2K) challenge – a distance of 4000+ km – in a record time of 6.5 days.
+                </p>
+            </div>
+
+            <!-- Full-Width Image Section -->
+            <div class="full-width-image">
+                <img src="assets/PowerTrain.avif" alt="Power Train" />
+            </div>
+
+            <!-- Slider and other Styles -->
+            <style>
+                html,
+                body {
+                    margin: 0;
+                    padding: 0;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    /* Allows scrolling vertically only */
+                    width: 100%;
+                    background-color: white;
+
+                }
+
+                .about-slider-container {
+                    width: 100%;
+                    /* Ensure it doesn't exceed the viewport */
+                    overflow: hidden;
+                    /* Prevent horizontal scrolling */
+                }
+
+                #about-slide {
+                    display: flex;
+                    /* Align slides in a row */
+                    flex-wrap: nowrap;
+                    /* Prevent wrapping */
+                }
+
+                .about-item {
+                    flex: 0 0 100%;
+                    /* Each slide takes the full width */
+                    position: relative;
+                    /* Ensure proper alignment */
+                }
+
+                /* Ensure other sections like the footer and download are also properly constrained */
+                .download__container,
+                .footer__container {
+                    max-width: 100%;
+                    overflow: hidden;
+                }
+
+                .about-slider-container {
+                    position: relative;
+                    margin: 50px auto;
+                    width: 100%;
+                    height: 100vh;
+                    padding: 50px;
+                    background-color: #f5f5f5;
+                    box-shadow: 0 30px 50px #dbdbdb;
+                }
+
+                #about-slide {
+                    width: max-content;
+                    margin-top: 50px;
+                }
+
+                .about-item {
+                    width: 200px;
+                    height: 300px;
+                    background-position: 50% 50%;
+                    display: inline-block;
+                    transition: 0.5s;
+                    background-size: cover;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    border-radius: 20px;
+                    box-shadow: 0 30px 50px #505050;
+                }
+
+                .about-item:nth-child(1),
+                .about-item:nth-child(2) {
+                    left: 0;
+                    top: 0;
+                    transform: translate(0, 0);
+                    border-radius: 0;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: none;
+                }
+
+                .about-item:nth-child(3) {
+                    left: 50%;
+                }
+
+                .about-item:nth-child(4) {
+                    left: calc(50% + 220px);
+                }
+
+                .about-item:nth-child(5) {
+                    left: calc(50% + 440px);
+                }
+
+                .about-item:nth-child(n+6) {
+                    left: calc(50% + 660px);
+                    opacity: 0;
+                }
+
+                .about-item .about-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 100px;
+                    width: 300px;
+                    text-align: left;
+                    padding: 0;
+                    color: #eee;
+                    transform: translate(0, -50%);
+                    display: none;
+                    font-family: system-ui;
+                }
+
+                .about-item:nth-child(2) .about-content {
+                    display: block;
+                    z-index: 11111;
+                }
+
+
+                .about-item .des {
+                    margin: 20px 0;
+                    opacity: 0;
+                    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+                }
+
+                .about-item button {
+                    padding: 10px 20px;
+                    border: none;
+                    opacity: 0;
+                    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+                }
+
+                @keyframes showcontent {
+                    from {
+                        opacity: 0;
+                        transform: translate(0, 100px);
+                        filter: blur(33px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                        filter: blur(0);
+                    }
+                }
+
+                /* Navigation Buttons */
+                .about-buttons {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 43%;
+                    width: 100%;
+                    z-index: 2;
+                }
+
+                .about-buttons button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid #555;
+                    background-color: #fff;
+                    font-size: 20px;
+                    display: inline-block;
+                    line-height: 50px;
+                    text-align: center;
+                    transition: 0.5s;
+                    margin: 1%;
+                }
+
+                .about-buttons button:hover {
+                    background-color: #bac383;
+                }
+
+                .about-buttons button i {
+                    color: var(--text-light);
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                .about-buttons button:hover i {
+                    color: #fff;
+                }
+
+
+                /* Full-Width Image Section Styles */
+                .full-width-image {
+                    width: 100%;
+                    margin-top: 30px;
+                }
+
+                .full-width-image img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+
+
+                @media (max-width: 768px) {
+                    .about-slider-container {
+                        height: 90vh;
+                        /* Adjust height for smaller screens */
+                    }
+
+                    .about-item {
+                        height: 50vh;
+                        /* Maintain proportions */
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .about-slider-container {
+                        padding: 10px;
+                        /* Reduce padding for small screens */
+                    }
+
+                    .about-buttons button {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 15px;
+                    }
+                }
+            </style>
+
+            <!-- Slider Script -->
+            <script>
+                document.getElementById('about-next').onclick = function () {
+                    let lists = document.querySelectorAll('.about-item');
+                    document.getElementById('about-slide').appendChild(lists[0]);
+                }
+
+                document.getElementById('about-prev').onclick = function () {
+                    let lists = document.querySelectorAll('.about-item');
+                    document.getElementById('about-slide').prepend(lists[lists.length - 1]);
+                }
+            </script>
+            <!-- Body Section Ends -->
+        </div>
+    </header>
+
+    <!-- Download App section -->
+    <section class="section__container download__container">
+        <div class="download__grid">
+            <div class="download__content">
+                <h2 class="section__header">Download the free GEI app</h2>
+                <p>
+                    Download the Gravton Energy Innovations app to manage your bookings,
+                    find exclusive deals, and access 24/7 support, all from your mobile
+                    device.
+                </p>
+                <button class="btn2">Download the App</button>
+            </div>
+            <div class="download__image">
+                <img src="assets/Gravton App.jpg" alt="download" />
+            </div>
+        </div>
+    </section>
+    <!-- Download App section Ends -->
+
+    <!-- Scroll To Top Section -->
+    <div id="scroll-to-top">
+        <div id="progress">
+            <span id="progress-value">&#x1F815;</span>
+        </div>
+    </div>
+    <!-- Scroll To Top Section End -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer__container">
+            <!-- GEI Logo and Social Icons -->
+            <div class="footer__col logo-social">
+                <img src="assets/GEI Logo.png" alt="GEI Logo" class="footer__logo" />
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                    <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Main Menu</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>Contact Info</h4>
+                <ul class="footer__links">
+                    <li>Industrial area, Cherlapally, Hyderabad.</li>
+                    <li><a href="#">connect@gravtonmotors.com</a></li>
+                    <li><a href="#">b2b@gravtonmotors.com</a></li>
+                    <li><a href="#">7995252220</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bar">
+            <p>Copyright © Gravton Energy Innovations Pvt.Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
